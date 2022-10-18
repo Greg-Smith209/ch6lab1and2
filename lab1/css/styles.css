@@ -150,3 +150,92 @@ footer a{
   color: #4645a8;
 text-decoration: none;
 }
+
+/* media query for tablet viewport */
+@media screen and (min-width: 550px), print{
+  /* tablet viewport: show tab-desk, hide mobile class */
+.mobile{
+  display: none;
+   }
+   /* tablet viewport: style ruel for header content */
+   span.tab-desk{
+     display: inline;
+   }
+   /* tablet viewport: style rules for nav area */
+   .nav li{
+     border-top: none;
+     display: inline-block;
+     font-size: 1.5em;
+     border-right: 1px solid #e5e9fc;
+   }
+  .nav li p:last-child{
+     border-right: none;
+
+ }
+  .nav li{
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+      }
+
+/* tablet viewport: style rule for map */
+.map{
+width: 500px;
+height: 450px;
+}
+
+
+
+}
+/* media queryfor desktop viewport */
+@media screen and (min-width: 769px), print;{
+
+
+
+/* desktop viewport: style rule for header */
+.header{
+  padding: 2%;
+}
+
+/* desktop viewport: style rules for nav area */
+.nav li a{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+
+}
+a:hover{
+color: #373684;
+background-color: #e5e9fc;
+
+}
+
+/* desktop viewport: style rules for main content */
+#info ul{
+  margin-left: 5%;
+
+}
+.h3{
+  font-size: 1.5em;
+}
+#piano, #guitar, #violin{
+  width: 29%;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+}
+
+/* media query for print */
+
+@media print{
+  .body{
+    background-color: #fff;
+    color: #000;
+  }
+}
